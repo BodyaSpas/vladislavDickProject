@@ -1,0 +1,68 @@
+.aboutUsContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+    padding: 5% 0;
+
+    .aboutUsText {
+        width: 46%;
+
+        .subTitle {
+            font-family: 'Inter Bold';
+            font-size: 30px;
+            font-weight: 800;
+            line-height: 36px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-bottom: 6%;
+        }
+
+        .description {
+            font-family: 'Inter Regular';
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-bottom: 2%;
+        }
+    }
+
+    // .aboutUsIllustration{
+    //     width: 50%;
+    // }
+}
+
+@media screen and (max-width: 1199px) {
+    .aboutUsContent {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    .aboutUsContent .aboutUsText {
+        width: 70%;
+    }
+    .aboutUsContent .aboutUsText .subTitle{
+        // text-align: center;
+        margin-bottom: 2%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .aboutUsContent .aboutUsText{
+        width: 90%;
+    }
+
+}
+
+
+@media screen and (max-width: 575px) {
+    .aboutUsIllustration img {
+        width: 95%;
+        margin-bottom: 5%;
+    }
+
+}

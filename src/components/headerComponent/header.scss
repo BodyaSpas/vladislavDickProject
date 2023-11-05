@@ -1,0 +1,71 @@
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.headerLogo {
+    font-family: 'Inter Black';
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+
+    .navigationMenu {
+        width: 70%;
+
+        .navigationMenuList {
+            display: flex;
+
+            .navigationMenuList_li {
+                margin-left: 12%;
+
+                .navigationMenuList_link {
+                    text-decoration: none;
+                    font-family: 'Inter Medium';
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: black;
+
+                }
+            }
+        }
+    }
+
+    .navLanguage {
+        display: flex;
+        flex-direction: column;
+        .languageButton{
+            font-family: 'Inter Medium';
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+            background: transparent;
+            border: 0px;
+            cursor: pointer;
+            margin-bottom: 10%;
+        }
+        .active{
+            font-family: 'Inter Black';
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+            color:#F64040;
+        }
+    }
+}

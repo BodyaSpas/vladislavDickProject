@@ -1,0 +1,144 @@
+.contactForm{
+    background-color: #000000;
+    padding:5% 0;
+}
+
+.contactForm__content{
+    .contactForm__title{
+        color: #fff;
+        margin-bottom: 3%;
+    }
+    .main__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .contactForm__main{
+            width: 50%;
+            max-width: 570px;
+            .formData{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .form__item{
+                .form__input{
+                    outline: none;
+                    background-color: transparent;
+                    border: 0;
+                    border-bottom: 1px solid #FFFFFF;
+                    color:#fff;
+                    height: 30px;
+                    width: 270px;
+                    margin-bottom: 11%;    
+                    padding-bottom: 3%; 
+                    font-family: 'Inter Regular';
+                    font-size: 18px;
+                    line-height: 22px;    
+                    
+                    &::placeholder{
+                        color: #fff;
+                    }
+                }
+                .form__textarea{
+                    outline: none;
+                    background-color: transparent;
+                    border:0;
+                    border-bottom: 1px solid #FFFFFF;
+                    height: 110px;
+                    width: 100%;
+                    margin-bottom: 2%;
+                    
+                    font-family: 'Inter Regular';
+                    font-size: 18px;
+                    line-height: 22px;
+                    color:#fff;
+                    &::placeholder{
+                        color: #fff;
+                    }
+                }
+                .checkbox{
+                    margin-top: 1%;
+                    .checkbox__label{
+                        cursor: pointer;
+                        font-family: 'Inter Regular';
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #999999;
+                        margin-left: 3%;
+                    }
+                }
+            }
+            .formButton{
+                cursor: pointer;
+                outline: none;
+                border-radius: 5px;
+                background-color: #FF5C5C;
+                color:#fff;
+                font-family: 'Inter Bold';
+                font-size: 18px;
+                line-height: 22px;
+                height:60px;
+                width: 250px;
+                margin-top: 2%;
+            }
+            .warningMessage{
+                font-family: 'Inter Black';
+                font-size: 30px;
+                line-height: 30px;
+                color: #f52456;
+                margin-top: 7%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .contactForm__content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .contactForm__content .contactForm__main{
+     width: 100%;
+    }
+    .form__image{
+        display: none;
+    }
+    .contactForm__content .main__content .contactForm__main{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .contactForm__content .contactForm__main{
+        width: 85%;
+    }
+    .contactForm__content .contactForm__title{
+        width: 85%;
+    }
+    .form__item{
+        width: 100%;
+    }
+    .contactForm__content .contactForm__main .form__item .form__input{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .contactForm__content .main__content .contactForm__main .form__item .form__input{
+        width: 100%;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contactForm__content .main__content .contactForm__main{
+        width: 90%;
+    }
+
+    .contactForm__content .contactForm__title {
+        width: 90%;
+    }
+    .contactForm__content .main__content{
+        justify-content: center;
+    }
+}

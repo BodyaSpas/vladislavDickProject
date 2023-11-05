@@ -1,0 +1,98 @@
+.footer {
+    background-color: #000;
+}
+
+.footerContent {
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .description {
+        .logo {
+            font-family: 'Inter Black';
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 29px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #fff;
+        }
+
+        .slogan {
+            font-family: 'Inter Medium';
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #fff;
+        }
+    }
+
+    .footerNav {
+        width: 34%;
+
+        .navigationMenuList {
+            display: flex;
+
+            .navigationMenuList_li {
+                margin-left: 12%;
+
+                .navigationMenuList_link {
+                    text-decoration: none;
+                    font-family: 'Inter Medium';
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #fff;
+
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .footerContent .footerNav{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .footerContent .footerNav{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .footerContent{
+        // width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5%;
+        justify-content: space-evenly;
+    }
+
+    .footerContent .description .logo{
+        text-align: center;
+    }
+    .footerContent .description .slogan{
+        text-align: center;
+    }
+    .footerContent .footerNav{
+        width: 100%;
+    }
+    .footerContent .footerNav .navigationMenuList{
+        display: flex;
+        justify-content: space-around;
+        padding: 0 5%;
+        // width: 90%;
+    }
+    .footerContent .footerNav .navigationMenuList .navigationMenuList_li{
+        margin-left: 0;
+    }
+}

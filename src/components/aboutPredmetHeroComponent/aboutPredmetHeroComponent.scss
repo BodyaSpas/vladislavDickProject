@@ -1,0 +1,45 @@
+.aboutheroContent{
+    height: 80vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .heroOffer{
+        .offerTitle{
+            font-family: 'Inter Black';
+            font-size: 40px;
+            font-weight: 900;
+            line-height: 48px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-bottom: 1.5%;
+        }
+        .offerDescription{
+            font-family: 'Inter Medium';
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: left;
+            width: 55%;
+            margin-bottom: 5%;
+        }
+        .offerButton{
+            outline:none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: #FF5C5C;
+            box-shadow: 0px 9px 50px 0px #ff615c4d;
+            height:65px;
+            width: 370px;
+            font-family: 'Inter Bold';
+            font-size: 20px;
+            line-height: 33px;
+            color:#fff;
+        }
+    }
+}
